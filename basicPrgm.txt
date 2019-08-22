@@ -1,0 +1,17 @@
+10 REM Un simple test de fichier pour GitHub
+20 REM Oui, c'est un programme bateau écrit en Basic, et alors ?
+30 CLS
+40 INPUT "Quel est ton nom ? "; NOM$
+50 PRINT "Bonjour "; NOM$
+60 INPUT "Combien veux-tu voir d'étoiles ? "; NB_ETOILES
+70 ETOILES$ = ""
+80 FOR I = 1 TO NB_ETOILES
+90 ETOILES$ = ETOILES$ + "*"
+100 NEXT I
+110 PRINT ETOILES$
+120 INPUT "En veux-tu d'autres ? (o/n)"; REPONSE$
+130 IF LEN(REPONSE$) = 0 THEN GOTO 120
+140 REPONSE$ = LEFT$(REPONSE$, 1)
+150 IF REPONSE$ = "O" OR REPONSE$ = "o" THEN GOTO 60
+160 PRINT "À bientôt !"; U$
+170 END
