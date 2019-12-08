@@ -4,8 +4,8 @@
 40 INPUT "Quel est ton nom ? "; NOM$
 50 PRINT "Bonjour "; NOM$
 60 INPUT "Combien veux-tu voir d'étoiles ? "; NB_ETOILES
+65 NB_ITERATION = 0
 70 ETOILES$ = ""
-75 NB_ITERATION = 0
 80 FOR I = 1 TO NB_ETOILES
 90 ETOILES$ = ETOILES$ + "*"
 95 NB_ITERATION = NBITERATION + 1
